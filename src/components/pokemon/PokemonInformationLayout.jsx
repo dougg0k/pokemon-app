@@ -34,8 +34,12 @@ const PokemonInformationLayout = ({ pokemon }) => (
 			showBox={false}
 			showLink={false}
 		></PokemonCard>
-		<Text>Evolutions</Text>
-		<Divider mainColor={BLUE_3} />
+		{pokemon.evolutions && (
+			<>
+				<Text>Evolutions</Text>
+				<Divider mainColor={BLUE_3} />
+			</>
+		)}
 		<EvolutionsContainer>
 			{pokemon.evolutions &&
 				pokemon.evolutions.map(evolution => (
