@@ -1,4 +1,4 @@
-<https://pokemon-app-demo.netlify.com>
+<https://pokemon-webapp.netlify.com>
 
 Setup:
 
