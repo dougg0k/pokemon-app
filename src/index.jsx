@@ -6,7 +6,7 @@ import { createGlobalStyle } from "styled-components";
 import Routes from "./Routes";
 
 const client = new ApolloClient({
-	uri: "https://pokemon-samdavies.stylindex.now.sh"
+  uri: "https://graphql-pokemon.now.sh/"
 });
 
 const GlobalStyle = createGlobalStyle`
@@ -18,9 +18,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 ReactDOM.render(
-	<ApolloProvider client={client}>
-		<GlobalStyle />
-		<Routes />
-	</ApolloProvider>,
-	document.getElementById("root")
+  <ApolloProvider client={client}>
+    <GlobalStyle />
+    <Routes />
+  </ApolloProvider>,
+  document.getElementById("root")
 );
